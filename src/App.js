@@ -1,7 +1,7 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import React from 'react';
-import { Container, Nav, Navbar, NavDropdown, Modal } from 'react-bootstrap';
+import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import { Rating, Typography, Grid } from '@mui/material';
 
 function App() {  
