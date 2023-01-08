@@ -1,15 +1,10 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
-import React, { useState } from 'react';
-import { MDBInput, MDBCheckbox, MDBBtn, MDBTextArea, MDBValidationItem } from 'mdb-react-ui-kit';
+import React from 'react';
 import { Container, Nav, Navbar, NavDropdown, Modal } from 'react-bootstrap';
 import { Rating, Typography, Grid } from '@mui/material';
 
-
-function App() {
-  const [show, setShow] = useState(false);
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+function App() {  
 
   return (
     <div className='fullpage'>
@@ -20,10 +15,10 @@ function App() {
         </Navbar.Brand>
         <Nav className="me-auto">
             <Nav.Link href="https://drive.google.com/file/d/17PUoXho_UW9rbPUYnxICyYSJX0FxOmT5/view?usp=sharing">Resume</Nav.Link>
-            <Nav.Link onClick={handleShow}>Contact me</Nav.Link>
+            <Nav.Link href="mailto:matt.p.arceo@gmail.com" target="_blank">Contact me</Nav.Link>
             <NavDropdown title="Social Media">
               <NavDropdown.Item href='https://www.linkedin.com/in/matthew-arceo/'>LinkedIn</NavDropdown.Item>
-              <NavDropdown.Item href=''>GitHub</NavDropdown.Item>
+              <NavDropdown.Item href='https://github.com/AreSayYoo'>GitHub</NavDropdown.Item>
               <NavDropdown.Item href='https://instagram.com/aresayyoo'>Music</NavDropdown.Item>
             </NavDropdown>
         </Nav>
@@ -139,37 +134,6 @@ function App() {
       <footer bg='dark' align='center'>This website was created with react.</footer>
 
     </div>
-
-    <Modal show={show} onHide={handleClose}>
-        <Modal.Body>
-          <h1 className='text-center'>Contact Me</h1>
-          <br></br>
-          <form id='form' className='text-center' style={{ width: '100%', maxWidth: 'auto' }}>
-            <MDBValidationItem invalid feedback='Please provide your name.'>
-              <MDBInput label='Name' v-model='name' wrapperClass='mb-4' required />
-            </MDBValidationItem>
-
-            <MDBValidationItem invalid feedback='Please provide your email.'>
-              <MDBInput type='email' label='Email address' v-model='email' wrapperClass='mb-4' required />
-            </MDBValidationItem>
-
-            <MDBValidationItem invalid feedback='Please provide mail subject.'>
-              <MDBInput label='Subject' v-model='subject' wrapperClass='mb-4' required />
-            </MDBValidationItem>
-
-            <MDBValidationItem invalid feedback='Please provide a message text.'>
-              <MDBTextArea wrapperClass='mb-4' label='Message' required />
-            </MDBValidationItem>
-
-            <MDBValidationItem feedback=''>
-              <MDBCheckbox wrapperClass='d-flex justify-content-center' label='Send me copy' />
-            </MDBValidationItem>
-            <MDBBtn color='primary' block className='my-4'>
-              Send
-            </MDBBtn>
-          </form>
-        </Modal.Body>
-      </Modal>
     </div>
   );
 }
