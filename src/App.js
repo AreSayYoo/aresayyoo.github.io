@@ -34,7 +34,7 @@ function App() {
       <br></br>
       <h3>Introduction</h3>
       <p>
-        I am a recent graduate at Towson University, majoring in Computer Science. I was also a former Student
+        I am a recent graduate at Towson University, recieving my Bachelor's in Computer Science. I was also a former Student
         Athlete of Towson's Baseball team. I am seeking potential opportunites in IT and Software Development
         fields.
       </p>
@@ -123,7 +123,7 @@ function App() {
       <br></br>
       <br></br>
         In addition, I also enjoy...
-          <li>Golfing</li>
+          <li>Golf</li>
           <li>Weightlifting</li>
           <li>Running</li>
           <li>Reading</li>
@@ -131,7 +131,7 @@ function App() {
       </p>
       <br></br>
       <br></br>
-      <footer bg='dark' align='center'>This website was created with react.</footer>
+      <footer bg='dark' align='center'>This website was created with react</footer>
 
     </div>
     </div>
