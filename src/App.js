@@ -10,7 +10,7 @@ function App() {
     <div className='fullpage'>
     <Navbar fixed='top' expand='lg' bg="dark" variant="dark">
       <Container>
-        <Navbar.Brand href='home'>
+        <Navbar.Brand>
             Matthew Arceo
         </Navbar.Brand>
         <Nav className="me-auto">
