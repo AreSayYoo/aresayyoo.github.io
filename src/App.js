@@ -1,7 +1,13 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
+import logo from './logo.png';
+import img from './images/img.jpg';
+import img1 from './images/img1.jpg';
+import img2 from './images/img2.jpg';
+import img3 from './images/img3.jpg';
+import img4 from './images/img4.png';
 import React from 'react';
-import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
+import { Container, Nav, Navbar, NavDropdown, Carousel } from 'react-bootstrap';
 import { Rating, Typography, Grid } from '@mui/material';
 
 function App() {  
@@ -11,7 +17,7 @@ function App() {
     <Navbar fixed='top' expand='lg' bg="dark" variant="dark">
       <Container>
         <Navbar.Brand>
-            Matthew Arceo
+          <img alt='' src={logo} class='center-nav'/>
         </Navbar.Brand>
         <Nav className="me-auto">
             <Nav.Link href="https://drive.google.com/file/d/17PUoXho_UW9rbPUYnxICyYSJX0FxOmT5/view?usp=sharing">Resume</Nav.Link>
@@ -27,14 +33,29 @@ function App() {
     </Navbar>
 
     <div class="mt-4 p-5 bg-dark text-white ">
-      
-      <img alt='' src='@Url.Content("src\logo.png")'/>
 
       <h1>About Me</h1>
+      <Carousel>
+      <Carousel.Item>
+          <img class="carousel-img" src={img} alt=""/>
+        </Carousel.Item>
+        <Carousel.Item>
+          <img class="carousel-img" src={img1} alt=""/>
+        </Carousel.Item>
+        <Carousel.Item>
+          <img class="carousel-img" src={img2} alt=""/>
+        </Carousel.Item>
+        <Carousel.Item>
+          <img class="carousel-img" src={img3} alt=""/>
+        </Carousel.Item>
+        <Carousel.Item>
+          <img class="carousel-img" src={img4} alt=""/>
+        </Carousel.Item>
+      </Carousel>
       <br></br>
       <h3>Introduction</h3>
       <p>
-        I am a recent graduate at Towson University, recieving my Bachelor's in Computer Science. I was also a former Student
+        Hello! My name is Matthew Arceo. I am a recent graduate at Towson University, recieving my Bachelor's in Computer Science. I was also a former Student
         Athlete of Towson's Baseball team. I am seeking potential opportunites in IT and Software Development
         fields.
       </p>

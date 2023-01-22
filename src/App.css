@@ -36,3 +36,23 @@
     transform: rotate(360deg);
   }
 }
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.center-nav {
+  height: 20px;
+  width: auto;
+}
+
+.carousel-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  height: 500px;
+}
