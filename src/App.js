@@ -54,9 +54,9 @@ function App() {
       </Carousel>
       <br></br>
       <h3>Introduction</h3>
-      <p>
-        Hello! My name is Matthew Arceo. I am a recent graduate at Towson University, recieving my Bachelor's in Computer Science. I was also a former Student
-        Athlete of Towson's Baseball team. I am seeking potential opportunites in IT and Software Development
+      <p class="ptext">
+        Hello! My name is Matthew Arceo. I am a recent graduate of Towson University, recieving my Bachelor's in Computer Science. During my time at Towson, I was also a Student
+        Athlete of the Baseball team, which is what I spent most of my free time outside my studies. I am seeking opportunites in IT and Software Development
         fields.
       </p>
       <br></br>
@@ -136,14 +136,19 @@ function App() {
       </p>
       <br></br>
       <h3>Hobbies/Interests</h3>
-      <p>
-        I have always been a big fan of sports. Since living the Baltimore area, I have grown accustomed to keeping up with the Ravens/Orioles.
-        Since I retired playing baseball I recently grown an affection for Tennis. Also for fun I am a singer/songwriter and post my music
-        on Instagram. I would love to learn how to produce music and upload them to a streaming service in the near future (the link to 
-        my music account is in the navigation bar under "Social Media").
+      <p class="ptext">
+        I have always been a huge fan of sports. Ever since I moved to the Baltimore area, I have become a follower of the Ravens and Orioles.
+        In addition to playing baseball in college, I recently began to pick up tennis and enjoy playing matches with my friends.
+        
+        <br></br> 
+        <br></br>
+
+        Besides my love of sports, I also enjoy singing and writing my own songs that I share on social media. I would love
+        to continue to learn how to produce music and upload my songs to a streaming service in the near future. The link to
+        my music account is in the navigation bar under "Social Media" if you're interested in taking a listen.
       <br></br>
       <br></br>
-        In addition, I also enjoy...
+        My other hobbies include:
           <li>Golf</li>
           <li>Weightlifting</li>
           <li>Running</li>
