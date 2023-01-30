@@ -100,11 +100,11 @@ function App() {
           </Grid>
           <Grid item xs={6} md={4}>
             <Typography>React.js</Typography>
-            <Rating name="half-rating-read" value={2.5} precision={0.5} readOnly />
+            <Rating name="half-rating-read" value={3} precision={0.5} readOnly />
           </Grid>
           <Grid item xs={6} md={4}>
             <Typography>Node.js</Typography>
-            <Rating name="half-rating-read" value={2.5} precision={0.5} readOnly />
+            <Rating name="half-rating-read" value={3} precision={0.5} readOnly />
           </Grid>
         </Grid>
 
