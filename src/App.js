@@ -55,9 +55,8 @@ function App() {
       <br></br>
       <h3>Introduction</h3>
       <p class="ptext">
-        Hello! My name is Matthew Arceo. I am a recent graduate of Towson University, recieving my Bachelor's in Computer Science. During my time at Towson, I was also a Student
-        Athlete of the Baseball team, which is what I spent most of my free time outside my studies. I am seeking opportunites in IT and Software Development
-        fields.
+        Hello! My name is Matthew Arceo. I am a Techincal Support Specialist at DAKCS. I am an alum from Towson University where I also participated
+        as a student athlete on the baseball team.
       </p>
       <br></br>
       <h3>Skills</h3>
