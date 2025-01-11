@@ -20,7 +20,7 @@ function App() {
           <img alt='' src={logo} class='center-nav'/>
         </Navbar.Brand>
         <Nav className="me-auto">
-            <Nav.Link href="https://drive.google.com/file/d/17PUoXho_UW9rbPUYnxICyYSJX0FxOmT5/view?usp=sharing">Resume</Nav.Link>
+            <Nav.Link href="https://drive.google.com/file/d/1BtxPx66bcdXZxJZd5xi_V38pFLaJikz-/view?usp=sharing">Resume</Nav.Link>
             <Nav.Link href="mailto:matt.p.arceo@gmail.com" target="_blank">Contact me</Nav.Link>
             <NavDropdown title="Social Media">
               <NavDropdown.Item href='https://www.linkedin.com/in/matthew-arceo/'>LinkedIn</NavDropdown.Item>
@@ -55,7 +55,7 @@ function App() {
       <br></br>
       <h3>Introduction</h3>
       <p class="ptext">
-        Hello! My name is Matthew Arceo. I am a Techincal Support Specialist at DAKCS. I am an alum from Towson University where I also participated
+        Hello! My name is Matthew Arceo. I am a Techincal Product Specialist at DAKCS. I am an alum from Towson University where I also participated
         as a student athlete on the baseball team.
       </p>
       <br></br>
