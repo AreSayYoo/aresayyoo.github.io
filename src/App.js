@@ -13,157 +13,95 @@ import { Rating, Typography, Grid } from '@mui/material';
 function App() {  
 
   return (
-    <div className='fullpage'>
-    <Navbar fixed='top' expand='lg' bg="dark" variant="dark">
-      <Container>
-        <Navbar.Brand>
-          <img alt='' src={logo} class='center-nav'/>
-        </Navbar.Brand>
-        <Nav className="me-auto">
-            <Nav.Link href="https://drive.google.com/file/d/1BtxPx66bcdXZxJZd5xi_V38pFLaJikz-/view?usp=sharing">Resume</Nav.Link>
-            <Nav.Link href="mailto:matt.p.arceo@gmail.com" target="_blank">Contact me</Nav.Link>
-            <NavDropdown title="Social Media">
-              <NavDropdown.Item href='https://www.linkedin.com/in/matthew-arceo/'>LinkedIn</NavDropdown.Item>
-              <NavDropdown.Item href='https://github.com/AreSayYoo'>GitHub</NavDropdown.Item>
-              <NavDropdown.Item href='https://instagram.com/aresayyoo'>Music</NavDropdown.Item>
-            </NavDropdown>
-        </Nav>
+    <div>
+            <header className="bg-dark text-white py-3 d-flex justify-content-between align-items-center sticky-top">
+                <div className="logo ms-3 d-flex align-items-center">
+                    <img src="/logo.png" alt="Logo" className="me-2"/>
+                    <span className="fs-4 fw-bold"></span>
+                </div>
+                <nav className="me-3">
+                    <ul className="nav">
+                        <li className="nav-item">
+                            <a className="nav-link" href="#about">About Me</a>
+                        </li>
+                        <li>
+                            <a className="nav-link" href="#projects">Projects</a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="nav-link" href="#resume">Resume</a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="nav-link" href="#contact">Contact Me</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
 
-      </Container>
-    </Navbar>
+            <main className="container my-5 text-center">
 
-    <div class="mt-4 p-5 bg-dark text-white ">
+              <Carousel id="pictures" className="mb-5">
+                <Carousel.Item>
+                  <img class="carousel-img" src={img} alt=""/>
+                </Carousel.Item>
+                <Carousel.Item>
+                  <img class="carousel-img" src={img1} alt=""/>
+                </Carousel.Item>
+                <Carousel.Item>
+                  <img class="carousel-img" src={img2} alt=""/>
+                </Carousel.Item>
+                <Carousel.Item>
+                  <img class="carousel-img" src={img3} alt=""/>
+                </Carousel.Item>
+                <Carousel.Item>
+                  <img class="carousel-img" src={img4} alt=""/>
+                </Carousel.Item>
+              </Carousel>
 
-      <h1>About Me</h1>
-      <Carousel>
-      <Carousel.Item>
-          <img class="carousel-img" src={img} alt=""/>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img class="carousel-img" src={img1} alt=""/>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img class="carousel-img" src={img2} alt=""/>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img class="carousel-img" src={img3} alt=""/>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img class="carousel-img" src={img4} alt=""/>
-        </Carousel.Item>
-      </Carousel>
-      <br></br>
-      <h3>Introduction</h3>
-      <p class="ptext">
-        Hello! My name is Matthew Arceo. I am a Techincal Product Specialist at DAKCS. I am an alum from Towson University where I also participated
-        as a student athlete on the baseball team.
-      </p>
-      <br></br>
-      <h3>Skills</h3>
-      <p>
-        <h5><u>Languages</u></h5>
-        <Grid container spacing={3}>
-          <Grid item xs={6} md={4}>
-            <Typography>Java</Typography>
-            <Rating name="half-rating-read" value={3.5} precision={0.5} readOnly />
-          </Grid>
-          <Grid item xs={6} md={4}>
-            <Typography>Python</Typography>
-            <Rating name="half-rating-read" value={3} precision={0.5} readOnly />
-          </Grid>
-          <Grid item xs={6} md={4}>
-            <Typography>JavaScript</Typography>
-            <Rating name="half-rating-read" value={3} precision={0.5} readOnly />
-          </Grid>
-          <Grid item xs={6} md={4}>
-            <Typography>SQL</Typography>
-            <Rating name="half-rating-read" value={3.5} precision={0.5} readOnly />
-          </Grid>
-          <Grid item xs={6} md={4}>
-            <Typography>Kotlin</Typography>
-            <Rating name="half-rating-read" value={2} precision={0.5} readOnly />
-          </Grid>
-        </Grid>
+              <section id="about" className="mb-5" style={{ paddingTop: '80px', marginTop: '-80px' }}>
+                  <h1>About Me</h1>
+                  <br></br>
+                  <p>Hi, I'm an aspiring UX Designer passionate about creating user-friendly and intuitive designs. Explore my work and get to know me better.</p>
+              </section>
 
-        <br></br>
+              <section id="projects" className="mb-5" style={{ paddingTop: '80px', marginTop: '-80px' }}>
+                  <h1>Projects</h1>
+                  <br></br>
+                  <p>Here are some personal projects that I have designed:</p>
+                  <br></br>
+                  <h4>Movie Ordering App</h4>
+                  <div className="figma-project">
+                      <iframe
+                          title="Figma Project"
+                          width="100%"
+                          height="450"
+                          src="https://www.figma.com/embed?embed_host=share&url=YOUR_FIGMA_PROJECT_URL"
+                          allowFullScreen
+                          style={{
+                              border: 'none',
+                              borderRadius: '8px',
+                              overflow: 'hidden',
+                          }}
+                      ></iframe>
+                  </div>
+              </section>
 
-        <h5><u>Web Development</u></h5>
-        <Grid container spacing={3}>
-          <Grid item xs={6} md={4}>
-            <Typography>HTML</Typography>
-            <Rating name="half-rating-read" value={3} precision={0.5} readOnly />
-          </Grid>
-          <Grid item xs={6} md={4}>
-            <Typography>CSS</Typography>
-            <Rating name="half-rating-read" value={2.5} precision={0.5} readOnly />
-          </Grid>
-          <Grid item xs={6} md={4}>
-            <Typography>React.js</Typography>
-            <Rating name="half-rating-read" value={3} precision={0.5} readOnly />
-          </Grid>
-          <Grid item xs={6} md={4}>
-            <Typography>Node.js</Typography>
-            <Rating name="half-rating-read" value={3} precision={0.5} readOnly />
-          </Grid>
-        </Grid>
+              <section id="resume" className="mb-5" style={{ paddingTop: '80px', marginTop: '-80px' }}>
+                  <h1>Resume</h1>
+                  <br></br>
+                  <p><a href="/Matt_Arceo_Resume.pdf" download="Resume" className="btn btn-primary">Download my Resume</a></p>
+              </section>
 
-        <br></br>
+              <section id="contact" className="mb-5" style={{ paddingTop: '80px', marginTop: '-80px' }}>
+                  <h1>Contact Me</h1>
+                  <br></br>
+                  <p>Email: <a href="mailto:matt.p.arceo@gmail.com" className="text-decoration-none">matt.p.arceo@gmail.com</a></p>
+              </section>
+            </main>
 
-        <h5><u>Other</u></h5>
-        <Grid container spacing={3}>
-          <Grid item xs={6} md={4}>
-            <Typography>Microsoft Office</Typography>
-            <Rating name="half-rating-read" value={4} precision={0.5} readOnly />
-          </Grid>
-          <Grid item xs={6} md={4}>
-            <Typography>Jira</Typography>
-            <Rating name="half-rating-read" value={2.5} precision={0.5} readOnly />
-          </Grid>
-          <Grid item xs={6} md={4}>
-            <Typography>Leadership</Typography>
-            <Rating name="half-rating-read" value={4} precision={0.5} readOnly />
-          </Grid>
-          <Grid item xs={6} md={4}>
-            <Typography>Teamwork</Typography>
-            <Rating name="half-rating-read" value={4.5} precision={0.5} readOnly />
-          </Grid>
-          <Grid item xs={6} md={4}>
-            <Typography>Communication</Typography>
-            <Rating name="half-rating-read" value={4.5} precision={0.5} readOnly />
-          </Grid>
-          <Grid item xs={6} md={4}>
-            <Typography>Attention to Detail</Typography>
-            <Rating name="half-rating-read" value={4} precision={0.5} readOnly />
-          </Grid>
-        </Grid>
-      </p>
-      <br></br>
-      <h3>Hobbies/Interests</h3>
-      <p class="ptext">
-        I have always been a huge fan of sports. Ever since I moved to the Baltimore area, I have become a follower of the Ravens and Orioles.
-        In addition to playing baseball in college, I recently began to pick up tennis and enjoy playing matches with my friends.
-        
-        <br></br> 
-        <br></br>
-
-        Besides my love of sports, I also enjoy singing and writing my own songs that I share on social media. I would love
-        to continue to learn how to produce music and upload my songs to a streaming service in the near future. The link to
-        my music account is in the navigation bar under "Social Media" if you're interested in taking a listen.
-      <br></br>
-      <br></br>
-        My other hobbies include:
-          <li>Golf</li>
-          <li>Weightlifting</li>
-          <li>Running</li>
-          <li>Reading</li>
-          <li>Video Games</li>
-      </p>
-      <br></br>
-      <br></br>
-      <footer bg='dark' align='center'>This website was created with react</footer>
-
-    </div>
-    </div>
+            <footer className="bg-dark text-center py-3">
+                &copy; 2025 Matthew Arceo. All rights reserved.
+            </footer>
+        </div>
   );
 }
 
