@@ -43,24 +43,26 @@ function App() {
                         <Nav.Link>
                           <Link
                               to="about"
+                              smooth={true}
                               offset={-250} // Offset equal to the header height
+                              duration={1000} // Scroll animation duration
                               onClick={handleCollapse}
                           >
                               About Me
                           </Link>
                         </Nav.Link>
                         <Nav.Link>
-                            <Link to="projects" offset={-250} onClick={handleCollapse}>
+                            <Link to="projects" offset={-250} duration={1000} onClick={handleCollapse}>
                                 Projects
                             </Link>
                         </Nav.Link>
                         <Nav.Link>
-                            <Link to="resume" offset={-250} onClick={handleCollapse}>
+                            <Link to="resume" smooth={true} offset={-250} duration={1000} onClick={handleCollapse}>
                                 Resume
                             </Link>
                         </Nav.Link>
                         <Nav.Link>
-                            <Link to="contact" offset={-250} onClick={handleCollapse}>
+                            <Link to="contact" smooth={true} offset={-250} duration={1000} onClick={handleCollapse}>
                                 Contact Me
                             </Link>
                         </Nav.Link>
