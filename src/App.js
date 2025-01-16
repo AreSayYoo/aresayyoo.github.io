@@ -52,17 +52,17 @@ function App() {
                           </Link>
                         </Nav.Link>
                         <Nav.Link>
-                            <Link to="projects" offset={-250} duration={1000} onClick={handleCollapse}>
+                            <Link to="projects" offset={-300} duration={1000} onClick={handleCollapse}>
                                 Projects
                             </Link>
                         </Nav.Link>
                         <Nav.Link>
-                            <Link to="resume" smooth={true} offset={-250} duration={1000} onClick={handleCollapse}>
+                            <Link to="resume" smooth={true} offset={-300} duration={1000} onClick={handleCollapse}>
                                 Resume
                             </Link>
                         </Nav.Link>
                         <Nav.Link>
-                            <Link to="contact" smooth={true} offset={-250} duration={1000} onClick={handleCollapse}>
+                            <Link to="contact" smooth={true} offset={-300} duration={1000} onClick={handleCollapse}>
                                 Contact Me
                             </Link>
                         </Nav.Link>
@@ -103,13 +103,16 @@ function App() {
                   <br></br>
                   <p>Here are some personal projects that I have designed:</p>
                   <br></br>
-                  <h4>Movie Ordering App</h4>
+                  <h4>Shades of Green</h4>
+                  <br></br>
+                  <p>Shades of Green is a project I designed for a small business owner who does landscaping for a living. Most of their clientele are senior citizens, 
+                    so they requested a website that was simple and could be easliy interacted with. They also wanted me to include a contact us page, where they could handle specific inquiries for exisitng and new customers</p><br></br>
                   <div className="figma-project">
                       <iframe
                           title="Figma Project"
                           width="100%"
-                          height="450"
-                          src="https://www.figma.com/embed?embed_host=share&url=YOUR_FIGMA_PROJECT_URL"
+                          height="600"
+                          src="https://embed.figma.com/proto/4b5dYOsD5TH2mSElVBxr0w/Shades-of-Green?page-id=0%3A1&node-id=4-2&viewport=1352%2C291%2C0.34&scaling=contain&content-scaling=responsive&starting-point-node-id=4%3A2&embed-host=share"
                           allowFullScreen
                           style={{
                               border: 'none',
