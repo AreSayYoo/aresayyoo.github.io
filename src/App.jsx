@@ -9,7 +9,6 @@ import img4 from './images/img4.png';
 import React, {useState} from 'react';
 import { Container, Nav, Navbar, NavDropdown, Carousel } from 'react-bootstrap';
 import { Link } from 'react-scroll';
-import { Rating, Typography, Grid } from '@mui/material';
 
 function App() {  
 
