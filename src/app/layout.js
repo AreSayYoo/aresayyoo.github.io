@@ -26,6 +26,7 @@ export default function Stuff({ children }) {
 // 🎨 Color-changing effect
   const colors = ["#4CAF50", "#2E7D32", "#81C784", "#1B5E20", "#A5D6A7"];
   const [colorIndex, setColorIndex] = useState(0);
+  
 
   useEffect(() => {
     const observer = new IntersectionObserver(
