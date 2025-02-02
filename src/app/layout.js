@@ -23,7 +23,6 @@ export default function Stuff({ children }) {
   const aboutRef = useRef(null); // Reference for the "About Me" section
   const greenRef = useRef(null); // Reference for Shades of Green Intro
   const [isAboutActive, setIsAboutActive] = useState(false); // State for "About Me" section
-  const [isGreenActive, setIsGreenActive] = useState(false); // State for "Shades of Green" section
 // 🎨 Color-changing effect
   const colors = ["#4CAF50", "#2E7D32", "#81C784", "#1B5E20", "#A5D6A7"];
   const [colorIndex, setColorIndex] = useState(0);
@@ -35,52 +34,30 @@ export default function Stuff({ children }) {
           if (entry.target === aboutRef.current) {
             setIsAboutActive(entry.isIntersecting);
           }
-          if (entry.target === greenRef.current) {
-            setIsGreenActive(entry.isIntersecting);
-          }
         });
       },
-      { threshold: 0.2 } // Trigger when 50% of the section is visible
+      { threshold: 1.0 } // Trigger when 100% of the section is visible
     );
 
     if (aboutRef.current) {
       observer.observe(aboutRef.current);
     }
-
-    if (greenRef.current) {
-      observer.observe(greenRef.current);
-    }
-
     return () => {
       if (aboutRef.current) {
         observer.unobserve(aboutRef.current);
-      }
-      if (greenRef.current) {
-        observer.unobserve(greenRef.current);
       }
     };
   }, []);
 
   useEffect(() => {
-    let aboutInstance, greenInstance;
+    let aboutInstance;
 
     if (isAboutActive && aboutRef.current) {
       aboutInstance = new Typed(aboutRef.current, {
         strings: [
           "Hi, I'm Matt Arceo, an aspiring UX Designer passionate about creating user-friendly and intuitive designs. Explore my work and get to know me better."
         ],
-        typeSpeed: 20,
-        backSpeed: 30,
-        loop: false, // Only type once when scrolled into view
-      });
-    }
-
-    if (isGreenActive && greenRef.current) {
-      greenInstance = new Typed(greenRef.current, {
-        strings: [
-          "Shades of Green is a project I designed for a small business owner who does landscaping for a living. Most of their clientele are senior citizens, so they requested a website that was simple and could be easily interacted with. They also wanted me to include a contact us page, where they could handle specific inquiries for existing and new customers."
-        ],
-        typeSpeed: 15,
+        typeSpeed: 5,
         backSpeed: 30,
         loop: false, // Only type once when scrolled into view
       });
@@ -88,9 +65,8 @@ export default function Stuff({ children }) {
 
     return () => {
       if (aboutInstance) aboutInstance.destroy();
-      if (greenInstance) greenInstance.destroy();
     };
-  }, [isAboutActive, isGreenActive]);
+  }, [isAboutActive]);
 
 
   // 🚀 Interval-based color change for About Me header
@@ -147,7 +123,7 @@ export default function Stuff({ children }) {
                 }}
               >Shades of Green</h2>
               <p className="typing-effect">
-                <span ref={greenRef}></span>
+              Shades of Green is a project I designed for a small business owner who does landscaping for a living. Most of their clientele are senior citizens, so they requested a website that was simple and could be easily interacted with. They also wanted me to include a contact us page, where they could handle specific inquiries for existing and new customers.
               </p>
 
               <div className="figma-project">
