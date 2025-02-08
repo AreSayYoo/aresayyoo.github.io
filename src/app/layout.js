@@ -132,7 +132,7 @@ export default function Stuff({ children }) {
                   title="Figma Project"
                   width="100%"
                   height="600"
-                  src="https://embed.figma.com/proto/4b5dYOsD5TH2mSElVBxr0w/Shades-of-Green?page-id=0%3A1&node-id=4-2&viewport=1352%2C291%2C0.34&scaling=contain&content-scaling=responsive&starting-point-node-id=4%3A2&embed-host=share"
+                  src="https://www.figma.com/proto/4b5dYOsD5TH2mSElVBxr0w/Shades-of-Green?page-id=0%3A1&node-id=690-24&viewport=211%2C63%2C0.32&t=uUJC5vjSnIlhzvdC-1&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=690%3A24"
                   allowFullScreen
                   style={{
                     border: "none",
