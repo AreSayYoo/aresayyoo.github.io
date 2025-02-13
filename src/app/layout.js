@@ -148,7 +148,7 @@ export default function Stuff({ children }) {
               <h1>Resume</h1>
               <p>
                 <a
-                  href="/public/Matt_Arceo_Resume.pdf"
+                  href="/public/Matthew_Arceo_Resume.pdf"
                   download="Resume"
                   className="btn btn-primary"
                 >
