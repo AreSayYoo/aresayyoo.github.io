@@ -16,7 +16,7 @@ export default function Home() {
   
       const typedInstance = new Typed(aboutTextRef.current, {
         strings: [
-          "Hi, I'm Matt Arceo, an aspiring UX Designer passionate about creating user-friendly and intuitive designs. Explore my work and get to know me better!",
+          "Hi, I'm Matt Arceo, an aspiring Fullstack Developer passionate about creating user-friendly and intuitive designs. Explore my work and get to know me better!",
         ],
         typeSpeed: 25,
         backSpeed: 30,
